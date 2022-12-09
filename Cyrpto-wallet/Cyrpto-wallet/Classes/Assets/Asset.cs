@@ -14,6 +14,7 @@ namespace Cyrpto_wallet.Classes.Assets
         public Guid Adress { get; }
         public string Name { get; }
         public Decimal Value { get; private set; }
+        public Decimal OldValue { get; private set; }=0; 
         public Asset(string name, Decimal value)
         {
             Adress = Guid.NewGuid();

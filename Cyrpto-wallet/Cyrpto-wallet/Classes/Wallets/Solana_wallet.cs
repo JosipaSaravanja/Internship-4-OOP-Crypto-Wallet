@@ -8,12 +8,8 @@ namespace Cyrpto_wallet.Classes.Wallets
 {
     public class Solana_wallet : Wallet
     {
-        public static List<Guid> AdressesOfSuportedAssets = new List<Guid>()
-        {
-            //pronaći podatke
-        };
-        public List<Guid> AdressesOfNonFunglibleAssets { get; private set; }
-        public Solana_wallet() : base(AdressesOfSuportedAssets)
+        public List<Guid> AdressesOfNonFunglibleAssets { get; private set; } = new List<Guid>();
+        public Solana_wallet(List<Guid> adressesOfSuportedAssets) : base(adressesOfSuportedAssets)
         {
         }
         public override void PrintWallet()

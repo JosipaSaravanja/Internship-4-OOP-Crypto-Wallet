@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Cyrpto_wallet.Classes.Transaction
 {
-    public class Non_fungible_asset_transaction : Transaction
+    public class Non_fungible_asset_transaction : Transactions
     {
-        public Non_fungible_asset_transaction(DateOnly date, Guid adressOfWalletSending, Guid adressOfWalletReceiving) : base(date, adressOfWalletSending, adressOfWalletReceiving)
+        public Non_fungible_asset_transaction(DateTime dateTime, Guid adressOfWalletSending, Guid adressOfWalletReceiving, Decimal value) : base(dateTime, adressOfWalletSending, adressOfWalletReceiving, value)
         { }
     }
 }

@@ -6,23 +6,28 @@ using System.Threading.Tasks;
 
 namespace Cyrpto_wallet.Classes.Transaction
 {
-    public class Transaction
+    public class Transactions
     {
         public Guid Id { get; }
         public Guid AdressOfAsset { get; }
-        public DateOnly Date { get; }
+        public DateTime Date { get; }
         public Guid AdressOfWalletSending { get; }
         public Guid AdressOfWalletReceiving { get; }
-        public bool IsRevoked { get; }
-        public Transaction(DateOnly date, Guid adressOfWalletSending, Guid adressOfWalletReceiving)
+        public bool IsRevoked;
+        public Decimal Value; //ili amount
+        public Transactions(DateTime dateTime, Guid adressOfWalletSending, Guid adressOfWalletReceiving, Decimal value)
         {
             Id = Guid.NewGuid();
             AdressOfAsset = Guid.NewGuid();
-            Date = date;
+            Date = dateTime;
             AdressOfWalletSending = adressOfWalletReceiving;
             AdressOfWalletReceiving = adressOfWalletSending;
+            Value=value;
             IsRevoked = false;
         }
-        //print transactions()???
+        public void Revoke()
+        {
+            IsRevoked=true;
+        }
     }
 }
