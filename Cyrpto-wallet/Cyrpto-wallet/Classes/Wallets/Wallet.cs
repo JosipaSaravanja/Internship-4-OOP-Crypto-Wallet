@@ -31,15 +31,6 @@ namespace Cyrpto_wallet.Classes.Wallets
             return br;
         }
 
-        public virtual Decimal GetLastValue()
-        {
-            decimal br=0;
-            foreach(var el in BalanceOfFungibleAsset)
-            {
-               br+=Storage.FungibleAssets.Find(item=>item.Adress==el.name).OldValue*el.amount;
-            }
-            return br;
-        }
 
         public virtual void PrintWallet()
         {

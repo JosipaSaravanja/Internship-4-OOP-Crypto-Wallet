@@ -21,5 +21,11 @@ namespace Cyrpto_wallet.Classes.Assets
             Name = name;
             Value = value;
         }
+        public virtual void ChangeValue()
+        {
+            OldValue=Value;
+            var rnd = new Random();;
+            Value*=rnd.Next(1025, 975)/1000;
+        }
     }
 }

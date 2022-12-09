@@ -37,7 +37,7 @@ namespace Cyrpto_wallet.Classes.Wallets
                     Console.WriteLine($"Adresa: {assets} \nIme: {fungible.Name}");
                     Console.WriteLine($"Vrijednost u fungible asset: {fungible.Value}");
                     Console.WriteLine($"Vrijednost u dolarima: {fungible.Value*Storage.FungibleAssets.Find(item=>item.Adress==nonFungible).Value}");
-                    Console.WriteLine($"Ime: {100*Storage.FungibleAssets.Find(item=>item.Adress==nonFungible).Value/Storage.FungibleAssets.Find(item=>item.Adress==nonFungible).OldValue}"); //ne znam moze li se sama vrijednost non fungible asseta mjenjat kao u fungible asset vrijednostima a ne u odnosu na dolare
+                    Console.WriteLine($"Ime: {100*Storage.FungibleAssets.Find(item=>item.Adress==nonFungible).Value/Storage.FungibleAssets.Find(item=>item.Adress==nonFungible).OldValue}"); 
             }
             
         }
