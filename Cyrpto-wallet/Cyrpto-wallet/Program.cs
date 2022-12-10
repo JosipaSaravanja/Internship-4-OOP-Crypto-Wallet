@@ -71,7 +71,6 @@ void CreateWallet()
             IncorrectEntry();
             break;
     }
-    
 }
 void AccessWallet()
 {
@@ -103,6 +102,7 @@ void AccessWallet()
                 case "1":
                     if(Storage.Wallets.FindIndex(item=> item.Adress == Guid.Parse(adress))!=-1 && Guid.TryParse(adress, out a))
                     Storage.Wallets.Find(item=> item.Adress == Guid.Parse(adress)).PortofolioPrint();
+                    Console.ReadLine();
                     break;
                 case "2":
                     Console.WriteLine("Unesite adresu walleta kojem šalje asset:");
@@ -162,7 +162,6 @@ void AccessWallet()
                     IncorrectEntry();
                     break;
             }
-            Console.ReadLine();
             break;
         default:
             IncorrectEntry();

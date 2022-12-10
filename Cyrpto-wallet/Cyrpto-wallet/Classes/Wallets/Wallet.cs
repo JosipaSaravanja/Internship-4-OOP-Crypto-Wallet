@@ -46,19 +46,27 @@ namespace Cyrpto_wallet.Classes.Wallets
         public virtual void PortofolioPrint()   
         {
             Console.WriteLine($"Ukupna vrijednost: {GetValue()} $");
-            foreach(var el in BalanceOfFungibleAsset)
+            foreach(var el in AdressesOfSuportedAssets)
             {
-                    var asset=Storage.FungibleAssets.Find(item => item.Adress==el.name);
-                    Console.WriteLine($"Adresa: {el.name} \n"+
+                var item=BalanceOfFungibleAsset.Find(ele=>ele.name==el);
+                var asset=Storage.FungibleAssets.Find(item => item.Adress==el);
+                Console.WriteLine($"Adresa: {el} \n"+
                         $"Ime: {asset.Name}\n"+
-                        $"Ime: {asset.Label}\n"+
-                        $"Ime: {asset.Value*el.amount}\n"+
-                        $"Ime: {asset.OldValue/asset.Value*100-100}%");
+                        $"Oznaka: {asset.Label}\n"+
+                        $"Vrijednost: {asset.Value*item.amount}\n");
+                if (GetValue()!= 0)
+                {
+                    Console.WriteLine($"Omjer vrijednosti: {asset.OldValue/asset.Value*100-100}%");
+                }
             }
         }
-        public virtual void AddTransaction(Guid adressOfTransaction)
+        public virtual void AddTransaction(Guid adressOfTransaction, Decimal amount)
         {
-            AdressesOfTransactions.Add(adressOfTransaction);
+            if (BalanceOfFungibleAsset.FindIndex(item => item.name == adressOfTransaction) != -1) {
+                //BalanceOfFungibleAsset.FindIndex(item => item.name == adressOfTransaction)=(adressOfTransaction, BalanceOfFungibleAsset.FindIndex(item => item.name == adressOfTransaction).amount+=amount);
+            }
+            else { 
+            BalanceOfFungibleAsset.Add((adressOfTransaction, amount));}
         }
 
         public virtual void PrintTrasactions()

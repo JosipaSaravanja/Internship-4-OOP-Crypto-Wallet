@@ -25,7 +25,7 @@ namespace Cyrpto_wallet.Classes.Assets
         {
             OldValue=Value;
             var rnd = new Random();;
-            Value*=rnd.Next(1025, 975)/1000;
+            Value*=rnd.Next(975, 1025)/1000;
         }
     }
 }

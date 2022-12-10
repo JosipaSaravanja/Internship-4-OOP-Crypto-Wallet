@@ -26,38 +26,38 @@ namespace Cyrpto_wallet.Classes
 
         static Storage()
         {
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 1, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 2, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 3, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 4, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 5, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 6, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 7, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 8, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 9, ""));
-            FungibleAssets.Add(new Fungible_asset("Bitcoin", 10, ""));
+            FungibleAssets.Add(new Fungible_asset("Bitcoin", new Decimal(16923.60), "BTC"));
+            FungibleAssets.Add(new Fungible_asset("Gridcoin", new Decimal(0.0457), "GRC"));
+            FungibleAssets.Add(new Fungible_asset("Binance", new Decimal(1), "NMC"));
+            FungibleAssets.Add(new Fungible_asset("Namecoin", new Decimal(16923.60), ""));
+            FungibleAssets.Add(new Fungible_asset("Auroracoin", new Decimal(0.4411), "AUR"));
+            FungibleAssets.Add(new Fungible_asset("Solana", new Decimal(14.16), "SOL"));
+            FungibleAssets.Add(new Fungible_asset("Dogecoin", new Decimal(0.1), "DOGE"));
+            FungibleAssets.Add(new Fungible_asset("Etherum", new Decimal(1255.55), "ETH"));
+            FungibleAssets.Add(new Fungible_asset("XRP", new Decimal(0.39), "XRP"));
+            FungibleAssets.Add(new Fungible_asset("Litcoin", new Decimal(79.59), "Litcoin"));
             
             
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 1, FungibleAssets[0].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 2, FungibleAssets[1].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 3, FungibleAssets[2].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 4, FungibleAssets[3].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 5, FungibleAssets[4].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 6, FungibleAssets[5].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 7, FungibleAssets[6].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 8, FungibleAssets[7].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 9, FungibleAssets[8].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 10, FungibleAssets[9].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 11, FungibleAssets[0].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 12, FungibleAssets[1].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 13, FungibleAssets[2].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 14, FungibleAssets[3].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 15, FungibleAssets[4].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 16, FungibleAssets[5].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 17, FungibleAssets[6].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 18, FungibleAssets[7].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 19, FungibleAssets[8].Adress));
-            NonFungibleAssets.Add(new Non_Fungible_asset("", 20, FungibleAssets[9].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("Yellow dress", 1, FungibleAssets[0].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("red cat", 2, FungibleAssets[1].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("blue dog", 3, FungibleAssets[2].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("purple desk", 4, FungibleAssets[3].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("white coat", 5, FungibleAssets[4].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("green flower", 6, FungibleAssets[5].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("yellow pencil", 7, FungibleAssets[6].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("round ball", 8, FungibleAssets[7].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("wooden stick", 9, FungibleAssets[8].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("sword", 10, FungibleAssets[9].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("apple", 11, FungibleAssets[0].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("orange orange", 12, FungibleAssets[1].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("banana", 13, FungibleAssets[2].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("ananans", 14, FungibleAssets[3].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("monkey", 15, FungibleAssets[4].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("russian flag", 16, FungibleAssets[5].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("medal", 17, FungibleAssets[6].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("golden ring", 18, FungibleAssets[7].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("diamond ring", 19, FungibleAssets[8].Adress));
+            NonFungibleAssets.Add(new Non_Fungible_asset("blue pants", 20, FungibleAssets[9].Adress));
             
             BitcoinFungibleAssets.Add(FungibleAssets[0].Adress);
             BitcoinFungibleAssets.Add(FungibleAssets[3].Adress);
@@ -132,8 +132,8 @@ namespace Cyrpto_wallet.Classes
             if (walletA.AdressesOfSuportedAssets.Contains(Guid.Parse(assetId)) || walletB.AdressesOfSuportedAssets.Contains(Guid.Parse(assetId))){
                 FungibleTransactions.Add(newTransaction);
                 AllTransactions.Add(newTransaction);
-                walletA.AddTransaction(newTransaction.Id);
-                walletB.AddTransaction(newTransaction.Id);
+                walletA.AddTransaction(asset.Adress, Decimal.Parse(amoutOfAsset));
+                walletB.AddTransaction(asset.Adress,  -1*Decimal.Parse(amoutOfAsset));
 
             }
             else
@@ -145,12 +145,16 @@ namespace Cyrpto_wallet.Classes
         }
         public static void NonFungibleTransaction(string adressOfWalletReceiving, string adressOfWalletSending, string assetId)
         {
+            var walletA=Wallets.Find(item=> item.Adress == Guid.Parse(adressOfWalletReceiving));
+            var walletB=Wallets.Find(item=> item.Adress == Guid.Parse(adressOfWalletSending));
             var asset=Storage.NonFungibleAssets.Find(item=> item.Adress==Guid.Parse(assetId));
             var fungible=Storage.FungibleAssets.Find(item=> item.Adress==asset.AdressOfFungibleAssetOfValue);
             var newTransaction=new Non_fungible_asset_transaction(DateTime.Now, Guid.Parse(adressOfWalletSending), Guid.Parse(adressOfWalletReceiving), (asset.Value*fungible.Value));
 
             NonFungibleTransactions.Add(newTransaction);
             fungible.ChangeValue();
+                walletA.AddTransaction(newTransaction.Id, fungible.Value);
+                walletB.AddTransaction(newTransaction.Id,  -1*fungible.Value);
         }
     }
 }

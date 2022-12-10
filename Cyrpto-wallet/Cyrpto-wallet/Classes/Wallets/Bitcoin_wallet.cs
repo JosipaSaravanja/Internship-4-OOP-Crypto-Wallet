@@ -20,39 +20,7 @@ namespace Cyrpto_wallet.Classes.Wallets
             Console.WriteLine("Tip: "+Type);
             base.PrintWallet();
         }
-        /*
-        public void PortofolioPrint()
-            
-        {
-            Console.WriteLine($"Ukupna vrijednost: {ValueOfWallet} $");
-            if (ValueOfWallet!=0) 
-            { foreach(var assets in BalanceOfFungibleAsset)
-            {
-                    Console.WriteLine($"Adresa: {assets.name} \n"+
-                        $"Ime: {Storage.FungibleAssets.Find(item => item.Adress==assets.name).Name}\n"+
-                        $"Ime: {Storage.FungibleAssets.Find(item => item.Adress==assets.name).Label}\n"+
-                        $"Ime: {Storage.FungibleAssets.Find(item => item.Adress==assets.name).Value}\n"+
-                        $"Ime: {Storage.FungibleAssets.Find(item => item.Adress==assets.name).OldValue}");
-
-            }
-                
-            }*/
-            /*
-            Decimal sum=0;
-            foreach(var assets in AdressesOfSuportedAssets)
-            {
-                var asset=Storage.FungibleAssets.Find(item => item.Adress==assets).ValueInDolars;
-                var amount=BalanceOfFungibleAsset.Find(item => item.name==assets).amount;
-                sum+=asset*amount;
-            }
-            Console.WriteLine($"ukupna vrijedonst: {sum}");
-            
-            foreach(var assets in AdressesOfSuportedAssets)
-            {
-                var asset=Storage.FungibleAssets.Find(item => item.Adress==assets).ValueInDolars;
-                var amount=BalanceOfFungibleAsset.Find(item => item.name==assets).amount;
-                sum+=asset*amount;
-            }*/
         
     }
 }
+//41988bba-59ee-4748-9f11-f2fe447bd70e
